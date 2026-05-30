@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard · Bal des CM2 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="app.js"></script>
+  </head>
+  <body data-page="dashboard" data-theme="dark">
+    <div class="sakura-layer" data-sakura></div>
+    <div class="confetti" data-confetti></div>
+    <div class="fireworks" data-fireworks></div>
+    <header class="topbar">
+      <div class="site-shell topbar-inner">
+        <a class="brand" href="index.html">
+          <span class="brand-mark">📊</span>
+          <span>
+            <span class="brand-title">Bal des CM2 2026</span>
+            <span class="brand-subtitle">Tableau de bord DJ</span>
+          </span>
+        </a>
+        <nav class="nav-links" data-nav></nav>
+      </div>
+    </header>
+
+    <main class="site-shell section">
+      <section class="page-header card">
+        <div class="section-header">
+          <div>
+            <span class="eyebrow">Pilotage temps réel</span>
+            <h1>Dashboard professionnel</h1>
+            <p>Vue synthétique pour décider vite pendant l’événement.</p>
+          </div>
+          <div class="toolbar">
+            <button type="button" class="ghost-button" data-toggle-theme>Changer le thème</button>
+            <button type="button" class="primary-button" data-celebrate>Confettis et feu d’artifice</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section dashboard-grid" data-dashboard></section>
+
+      <section class="section">
+        <div class="section-header">
+          <div>
+            <h2>Focus écoles</h2>
+            <p>Suivi de la participation par école participante.</p>
+          </div>
+        </div>
+        <div class="grid-3" data-school-stats></div>
+      </section>
+    </main>
+
+    <footer data-footer></footer>
+  </body>
+</html>

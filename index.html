@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bal des CM2 2026</title>
+    <meta
+      name="description"
+      content="Site assistant DJ immersif pour le Bal des CM2 2026 à Bruges, thème Japon, manga, anime et K-pop."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="app.js"></script>
+  </head>
+  <body data-page="index" data-theme="dark">
+    <div class="sakura-layer" data-sakura></div>
+    <div class="confetti" data-confetti></div>
+    <div class="fireworks" data-fireworks></div>
+
+    <header class="topbar">
+      <div class="site-shell topbar-inner">
+        <a class="brand" href="index.html">
+          <span class="brand-mark">🎌</span>
+          <span>
+            <span class="brand-title">Bal des CM2 2026</span>
+            <span class="brand-subtitle">Une dernière soirée avant le collège</span>
+          </span>
+        </a>
+        <nav class="nav-links" data-nav></nav>
+      </div>
+    </header>
+
+    <main class="site-shell">
+      <section class="hero">
+        <div class="hero-grid">
+          <div class="glass hero-copy">
+            <span class="eyebrow">DJ assistant temps réel</span>
+            <h1>🎌 BAL DES CM2 2026</h1>
+            <p>
+              Interface immersive pour piloter la soirée, gérer les playlists, suivre les demandes,
+              lancer les animations et afficher un mode TV grand format dans un univers Tokyo néon.
+            </p>
+            <div class="hero-meta">
+              <span class="chip"><strong>📅 5 Juin 2026</strong></span>
+              <span class="chip"><strong>📍 Bruges</strong></span>
+              <span class="chip"><strong>🎧 DJ Julien</strong></span>
+              <span class="chip"><strong>🎎 Thème Japon</strong></span>
+            </div>
+            <div class="toolbar">
+              <a class="primary-button" href="dashboard.html">Commencer la soirée</a>
+              <button class="ghost-button" type="button" data-toggle-theme>Mode sombre / clair</button>
+              <button class="ghost-button" type="button" data-celebrate>Lancer les effets</button>
+            </div>
+          </div>
+
+          <div class="glass hero-visual">
+            <span class="hero-orb orb-a"></span>
+            <span class="hero-orb orb-b"></span>
+            <div class="hero-stage">
+              <div class="cityline"></div>
+              <div class="quick-stats">
+                <span class="mini-stat"><strong>3 écoles</strong> participantes</span>
+                <span class="mini-stat"><strong>55" TV</strong> ready</span>
+                <span class="mini-stat"><strong>LocalStorage</strong> actif</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <div>
+            <h2>Command Center DJ</h2>
+            <p>Conçu pour une utilisation en direct sur ordinateur, tablette ou télévision géante.</p>
+          </div>
+        </div>
+        <div class="grid-4">
+          <article class="card">
+            <h3>Playlists organisées</h3>
+            <p>Bibliothèque musicale classée par style, énergie, moment et recommandation DJ.</p>
+          </article>
+          <article class="card">
+            <h3>Demandes en direct</h3>
+            <p>Ajout rapide, tri instantané et suivi du statut des demandes des enfants.</p>
+          </article>
+          <article class="card">
+            <h3>Animations prêtes</h3>
+            <p>Règles, matériel, durée et nombre de joueurs pour chaque temps fort.</p>
+          </article>
+          <article class="card">
+            <h3>Mode TV</h3>
+            <p>Grand affichage lisible à distance avec musique en cours, heure et compte à rebours.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <div>
+            <h2>Écoles participantes</h2>
+            <p>Vue rapide des trois écoles et de leur participation pendant la soirée.</p>
+          </div>
+        </div>
+        <div class="grid-3" data-index-schools></div>
+      </section>
+    </main>
+
+    <footer data-footer></footer>
+  </body>
+</html>

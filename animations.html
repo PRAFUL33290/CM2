@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animations · Bal des CM2 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="app.js"></script>
+  </head>
+  <body data-page="animations" data-theme="dark">
+    <div class="sakura-layer" data-sakura></div>
+    <header class="topbar">
+      <div class="site-shell topbar-inner">
+        <a class="brand" href="index.html">
+          <span class="brand-mark">🎤</span>
+          <span>
+            <span class="brand-title">Bal des CM2 2026</span>
+            <span class="brand-subtitle">Animations et activités</span>
+          </span>
+        </a>
+        <nav class="nav-links" data-nav></nav>
+      </div>
+    </header>
+
+    <main class="site-shell section">
+      <section class="page-header card">
+        <span class="eyebrow">Cartes interactives</span>
+        <h1>Animations prêtes à lancer</h1>
+        <p>Chaque animation précise durée, matériel, règles et nombre de joueurs pour éviter l’improvisation.</p>
+      </section>
+
+      <section class="section grid-3" data-animations></section>
+
+      <section class="section">
+        <div class="section-header">
+          <div>
+            <h2>Score blind test</h2>
+            <p>Compteur rapide pour attribuer les points en direct pendant l’animation.</p>
+          </div>
+        </div>
+        <div class="panel" data-blind-test></div>
+      </section>
+    </main>
+
+    <footer data-footer></footer>
+  </body>
+</html>

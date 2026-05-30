@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demandes · Bal des CM2 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="app.js"></script>
+  </head>
+  <body data-page="demandes" data-theme="dark">
+    <div class="sakura-layer" data-sakura></div>
+    <header class="topbar">
+      <div class="site-shell topbar-inner">
+        <a class="brand" href="index.html">
+          <span class="brand-mark">📱</span>
+          <span>
+            <span class="brand-title">Bal des CM2 2026</span>
+            <span class="brand-subtitle">Demandes des enfants</span>
+          </span>
+        </a>
+        <nav class="nav-links" data-nav></nav>
+      </div>
+    </header>
+
+    <main class="site-shell section">
+      <section class="page-header card">
+        <span class="eyebrow">Demandes en direct</span>
+        <h1>Tableau interactif</h1>
+        <p>Ajout rapide, recherche, tri, export CSV et impression pour usage terrain.</p>
+      </section>
+
+      <section class="section requests-layout">
+        <aside class="panel requests-sidebar">
+          <h3>Ajouter une demande</h3>
+          <form class="form-grid" data-request-form>
+            <input name="firstName" placeholder="Prénom" required />
+            <select name="school" required>
+              <option value="">École</option>
+              <option>Arc-en-Ciel</option>
+              <option>Jacques Prévert</option>
+              <option>Frida Kahlo</option>
+            </select>
+            <input class="full" name="song" placeholder="Musique demandée" required />
+            <button class="primary-button full" type="submit">Ajouter rapidement</button>
+          </form>
+          <div class="filters">
+            <input type="search" placeholder="Rechercher dans les demandes" data-request-filter data-request-search />
+            <select data-request-filter data-request-sort>
+              <option value="status">Trier par statut</option>
+              <option value="name">Trier par prénom</option>
+              <option value="school">Trier par école</option>
+            </select>
+          </div>
+          <div class="toolbar">
+            <button type="button" class="ghost-button" data-export-requests>Export Excel CSV</button>
+            <button type="button" class="ghost-button" data-print-requests>Export PDF / imprimer</button>
+          </div>
+          <div data-request-stats></div>
+        </aside>
+
+        <section class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Prénom</th>
+                <th>École</th>
+                <th>Musique demandée</th>
+                <th>Statut</th>
+              </tr>
+            </thead>
+            <tbody data-requests-body></tbody>
+          </table>
+        </section>
+      </section>
+    </main>
+
+    <footer data-footer></footer>
+  </body>
+</html>
