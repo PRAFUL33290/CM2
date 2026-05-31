@@ -177,7 +177,6 @@ function setupSakura() {
   for (let index = 0; index < 12; index += 1) {
     window.setTimeout(spawn, index * 350);
   }
-  window.setInterval(spawn, 1200);
 }
 
 function playSound() {
