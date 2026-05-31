@@ -303,6 +303,11 @@ body {
   text-overflow: ellipsis;
 }
 
+.track-energy {
+  font-size: 0.65rem;
+  opacity: 0.7;
+}
+
 .track-item .track-actions {
   display: flex;
   gap: 6px;

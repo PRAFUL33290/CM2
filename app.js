@@ -1,52 +1,15 @@
-// === PLAYLIST DATA ===
+// === PLAYLIST DATA (10 morceaux uniques extraits de Playlist_CM2_200_Morceaux.xlsx) ===
 const library = [
-  { id: 1, title: "Blue Bird", artist: "Ikimonogakari", category: "anime", url: "https://music.youtube.com/search?q=Blue+Bird+Ikimonogakari" },
-  { id: 2, title: "Gurenge", artist: "LiSA", category: "anime", url: "https://music.youtube.com/search?q=Gurenge+LiSA" },
-  { id: 3, title: "Idol", artist: "YOASOBI", category: "anime", url: "https://music.youtube.com/search?q=Idol+YOASOBI" },
-  { id: 4, title: "Cupid (Twin Version)", artist: "FIFTY FIFTY", category: "kpop", url: "https://music.youtube.com/search?q=Cupid+%28Twin+Version%29+FIFTY+FIFTY" },
-  { id: 5, title: "Magnetic", artist: "ILLIT", category: "kpop", url: "https://music.youtube.com/search?q=Magnetic+ILLIT" },
-  { id: 6, title: "Super Shy", artist: "NewJeans", category: "kpop", url: "https://music.youtube.com/search?q=Super+Shy+NewJeans" },
-  { id: 7, title: "Dynamite", artist: "BTS", category: "kpop", url: "https://music.youtube.com/search?q=Dynamite+BTS" },
-  { id: 8, title: "APT.", artist: "ROSÉ & Bruno Mars", category: "kpop", url: "https://music.youtube.com/search?q=APT.+ROS%C3%89+and+Bruno+Mars" },
-  { id: 9, title: "Espresso", artist: "Sabrina Carpenter", category: "pop", url: "https://music.youtube.com/search?q=Espresso+Sabrina+Carpenter" },
-  { id: 10, title: "Taste", artist: "Sabrina Carpenter", category: "pop", url: "https://music.youtube.com/search?q=Taste+Sabrina+Carpenter" },
-  { id: 11, title: "Beautiful Things", artist: "Benson Boone", category: "pop", url: "https://music.youtube.com/search?q=Beautiful+Things+Benson+Boone" },
-  { id: 12, title: "Flowers", artist: "Miley Cyrus", category: "pop", url: "https://music.youtube.com/search?q=Flowers+Miley+Cyrus" },
-  { id: 13, title: "As It Was", artist: "Harry Styles", category: "pop", url: "https://music.youtube.com/search?q=As+It+Was+Harry+Styles" },
-  { id: 14, title: "Water", artist: "Tyla", category: "pop", url: "https://music.youtube.com/search?q=Water+Tyla" },
-  { id: 15, title: "Can't Stop The Feeling!", artist: "Justin Timberlake", category: "dance", url: "https://music.youtube.com/search?q=Can%27t+Stop+The+Feeling%21+Justin+Timberlake" },
-  { id: 16, title: "Happy", artist: "Pharrell Williams", category: "dance", url: "https://music.youtube.com/search?q=Happy+Pharrell+Williams" },
-  { id: 17, title: "Uptown Funk", artist: "Mark Ronson ft. Bruno Mars", category: "dance", url: "https://music.youtube.com/search?q=Uptown+Funk+Mark+Ronson+ft.+Bruno+Mars" },
-  { id: 18, title: "Shake It Off", artist: "Taylor Swift", category: "pop", url: "https://music.youtube.com/search?q=Shake+It+Off+Taylor+Swift" },
-  { id: 19, title: "Roar", artist: "Katy Perry", category: "pop", url: "https://music.youtube.com/search?q=Roar+Katy+Perry" },
-  { id: 20, title: "Firework", artist: "Katy Perry", category: "pop", url: "https://music.youtube.com/search?q=Firework+Katy+Perry" },
-  { id: 21, title: "Dance The Night", artist: "Dua Lipa", category: "dance", url: "https://music.youtube.com/search?q=Dance+The+Night+Dua+Lipa" },
-  { id: 22, title: "Levitating", artist: "Dua Lipa", category: "dance", url: "https://music.youtube.com/search?q=Levitating+Dua+Lipa" },
-  { id: 23, title: "Blinding Lights", artist: "The Weeknd", category: "dance", url: "https://music.youtube.com/search?q=Blinding+Lights+The+Weeknd" },
-  { id: 24, title: "Stay", artist: "The Kid LAROI & Justin Bieber", category: "pop", url: "https://music.youtube.com/search?q=Stay+The+Kid+LAROI+%26+Justin+Bieber" },
-  { id: 25, title: "The Business", artist: "Tiësto", category: "dance", url: "https://music.youtube.com/search?q=The+Business+Ti%C3%ABsto" },
-  { id: 26, title: "Pedro", artist: "Jaxomy & Agatino Romero", category: "dance", url: "https://music.youtube.com/search?q=Pedro+Jaxomy+%26+Agatino+Romero" },
-  { id: 27, title: "Makeba", artist: "Jain", category: "french", url: "https://music.youtube.com/search?q=Makeba+Jain" },
-  { id: 28, title: "Sapés comme jamais", artist: "Maître Gims", category: "french", url: "https://music.youtube.com/search?q=Sap%C3%A9s+comme+jamais+Ma%C3%AEtre+Gims" },
-  { id: 29, title: "Bella", artist: "Maître Gims", category: "french", url: "https://music.youtube.com/search?q=Bella+Ma%C3%AEtre+Gims" },
-  { id: 30, title: "Je te le donne", artist: "Vitaa & Slimane", category: "french", url: "https://music.youtube.com/search?q=Je+te+le+donne+Vitaa+%26+Slimane" },
-  { id: 31, title: "On écrit sur les murs", artist: "Kids United", category: "french", url: "https://music.youtube.com/search?q=On+%C3%A9crit+sur+les+murs+Kids+United" },
-  { id: 32, title: "Dernière danse", artist: "Indila", category: "french", url: "https://music.youtube.com/search?q=Derni%C3%A8re+danse+Indila" },
-  { id: 33, title: "Mii Channel Theme", artist: "Nintendo Wii", category: "gaming", url: "https://music.youtube.com/search?q=Mii+Channel+Theme+Nintendo+Wii" },
-  { id: 34, title: "Super Mario Bros. Theme", artist: "Koji Kondo", category: "gaming", url: "https://music.youtube.com/search?q=Super+Mario+Bros.+Theme+Koji+Kondo" },
-  { id: 35, title: "Pokémon Theme", artist: "Jason Paige", category: "gaming", url: "https://music.youtube.com/search?q=Pok%C3%A9mon+Theme+Jason+Paige" },
-  { id: 36, title: "Megalovania", artist: "Toby Fox", category: "gaming", url: "https://music.youtube.com/search?q=Megalovania+Toby+Fox" },
-  { id: 37, title: "YMCA", artist: "Village People", category: "dance", url: "https://music.youtube.com/search?q=YMCA+Village+People" },
-  { id: 38, title: "Macarena", artist: "Los del Río", category: "dance", url: "https://music.youtube.com/search?q=Macarena+Los+del+R%C3%ADo" },
-  { id: 39, title: "I Gotta Feeling", artist: "The Black Eyed Peas", category: "dance", url: "https://music.youtube.com/search?q=I+Gotta+Feeling+The+Black+Eyed+Peas" },
-  { id: 40, title: "Party Rock Anthem", artist: "LMFAO", category: "dance", url: "https://music.youtube.com/search?q=Party+Rock+Anthem+LMFAO" },
-  { id: 41, title: "Timber", artist: "Pitbull ft. Kesha", category: "dance", url: "https://music.youtube.com/search?q=Timber+Pitbull+ft.+Kesha" },
-  { id: 42, title: "On The Floor", artist: "Jennifer Lopez ft. Pitbull", category: "dance", url: "https://music.youtube.com/search?q=On+The+Floor+Jennifer+Lopez+ft.+Pitbull" },
-  { id: 43, title: "Count on Me", artist: "Bruno Mars", category: "pop", url: "https://music.youtube.com/search?q=Count+on+Me+Bruno+Mars" },
-  { id: 44, title: "A Sky Full of Stars", artist: "Coldplay", category: "pop", url: "https://music.youtube.com/search?q=A+Sky+Full+of+Stars+Coldplay" },
-  { id: 45, title: "Viva La Vida", artist: "Coldplay", category: "pop", url: "https://music.youtube.com/search?q=Viva+La+Vida+Coldplay" },
-  { id: 46, title: "Unstoppable", artist: "Sia", category: "pop", url: "https://music.youtube.com/search?q=Unstoppable+Sia" },
-  { id: 47, title: "Hall of Fame", artist: "The Script ft. will.i.am", category: "pop", url: "https://music.youtube.com/search?q=Hall+of+Fame+The+Script+ft.+will.i.am" }
+  { id: 1, title: "Dynamite", artist: "BTS", category: "kpop", energy: 5, url: "https://music.youtube.com/search?q=Dynamite+BTS" },
+  { id: 2, title: "Butter", artist: "BTS", category: "kpop", energy: 5, url: "https://music.youtube.com/search?q=Butter+BTS" },
+  { id: 3, title: "Shake It Off", artist: "Taylor Swift", category: "pop", energy: 5, url: "https://music.youtube.com/search?q=Shake+It+Off+Taylor+Swift" },
+  { id: 4, title: "Happy", artist: "Pharrell Williams", category: "pop", energy: 5, url: "https://music.youtube.com/search?q=Happy+Pharrell+Williams" },
+  { id: 5, title: "Titanium", artist: "David Guetta ft. Sia", category: "dance", energy: 5, url: "https://music.youtube.com/search?q=Titanium+David+Guetta+ft.+Sia" },
+  { id: 6, title: "Wake Me Up", artist: "Avicii", category: "dance", energy: 5, url: "https://music.youtube.com/search?q=Wake+Me+Up+Avicii" },
+  { id: 7, title: "Idol", artist: "YOASOBI", category: "anime", energy: 5, url: "https://music.youtube.com/search?q=Idol+YOASOBI" },
+  { id: 8, title: "Pokémon Theme", artist: "Jason Paige", category: "anime", energy: 5, url: "https://music.youtube.com/search?q=Pok%C3%A9mon+Theme+Jason+Paige" },
+  { id: 9, title: "Hakuna Matata", artist: "Le Roi Lion", category: "disney", energy: 4, url: "https://music.youtube.com/search?q=Hakuna+Matata+Le+Roi+Lion" },
+  { id: 10, title: "Metamorphosis", artist: "INTERWORLD", category: "phonk", energy: 5, url: "https://music.youtube.com/search?q=Metamorphosis+INTERWORLD" }
 ];
 
 // === STATE ===
@@ -128,7 +91,7 @@ function renderLibrary() {
   $libraryList.innerHTML = filtered.map(track => `
     <div class="track-item">
       <div class="track-info">
-        <div class="track-name">${track.title}</div>
+        <div class="track-name">${track.title} <span class="track-energy">${'⚡'.repeat(track.energy)}</span></div>
         <div class="track-artist">${track.artist}</div>
       </div>
       <div class="track-actions">
